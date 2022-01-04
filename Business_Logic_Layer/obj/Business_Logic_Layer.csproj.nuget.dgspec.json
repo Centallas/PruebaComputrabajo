@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ecos0\\source\\repos\\TestEmployee\\Business_Logic_Layer\\Business_Logic_Layer.csproj": {}
+    "C:\\Users\\ecos0\\source\\TestJobs\\CurrentVersion\\TestEmployee\\Business_Logic_Layer\\Business_Logic_Layer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ecos0\\source\\repos\\TestEmployee\\Business_Logic_Layer\\Business_Logic_Layer.csproj": {
+    "C:\\Users\\ecos0\\source\\TestJobs\\CurrentVersion\\TestEmployee\\Business_Logic_Layer\\Business_Logic_Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecos0\\source\\repos\\TestEmployee\\Business_Logic_Layer\\Business_Logic_Layer.csproj",
+        "projectUniqueName": "C:\\Users\\ecos0\\source\\TestJobs\\CurrentVersion\\TestEmployee\\Business_Logic_Layer\\Business_Logic_Layer.csproj",
         "projectName": "Business_Logic_Layer",
-        "projectPath": "C:\\Users\\ecos0\\source\\repos\\TestEmployee\\Business_Logic_Layer\\Business_Logic_Layer.csproj",
+        "projectPath": "C:\\Users\\ecos0\\source\\TestJobs\\CurrentVersion\\TestEmployee\\Business_Logic_Layer\\Business_Logic_Layer.csproj",
         "packagesPath": "C:\\Users\\ecos0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecos0\\source\\repos\\TestEmployee\\Business_Logic_Layer\\obj\\",
+        "outputPath": "C:\\Users\\ecos0\\source\\TestJobs\\CurrentVersion\\TestEmployee\\Business_Logic_Layer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -35,8 +35,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\ecos0\\source\\repos\\TestEmployee\\Data_Access_Layer\\Data_Access_Layer.csproj": {
-                "projectPath": "C:\\Users\\ecos0\\source\\repos\\TestEmployee\\Data_Access_Layer\\Data_Access_Layer.csproj"
+              "C:\\Users\\ecos0\\source\\TestJobs\\CurrentVersion\\TestEmployee\\Data_Access_Layer\\Data_Access_Layer.csproj": {
+                "projectPath": "C:\\Users\\ecos0\\source\\TestJobs\\CurrentVersion\\TestEmployee\\Data_Access_Layer\\Data_Access_Layer.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\ecos0\\source\\repos\\TestEmployee\\Data_Access_Layer\\Data_Access_Layer.csproj": {
+    "C:\\Users\\ecos0\\source\\TestJobs\\CurrentVersion\\TestEmployee\\Data_Access_Layer\\Data_Access_Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ecos0\\source\\repos\\TestEmployee\\Data_Access_Layer\\Data_Access_Layer.csproj",
+        "projectUniqueName": "C:\\Users\\ecos0\\source\\TestJobs\\CurrentVersion\\TestEmployee\\Data_Access_Layer\\Data_Access_Layer.csproj",
         "projectName": "Data_Access_Layer",
-        "projectPath": "C:\\Users\\ecos0\\source\\repos\\TestEmployee\\Data_Access_Layer\\Data_Access_Layer.csproj",
+        "projectPath": "C:\\Users\\ecos0\\source\\TestJobs\\CurrentVersion\\TestEmployee\\Data_Access_Layer\\Data_Access_Layer.csproj",
         "packagesPath": "C:\\Users\\ecos0\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ecos0\\source\\repos\\TestEmployee\\Data_Access_Layer\\obj\\",
+        "outputPath": "C:\\Users\\ecos0\\source\\TestJobs\\CurrentVersion\\TestEmployee\\Data_Access_Layer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
