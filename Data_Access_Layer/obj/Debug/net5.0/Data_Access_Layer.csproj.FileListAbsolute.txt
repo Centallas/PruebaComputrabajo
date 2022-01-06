@@ -10,3 +10,15 @@ C:\Users\ecos0\source\repos\TestEmployee\Data_Access_Layer\obj\Debug\net5.0\Data
 C:\Users\ecos0\source\repos\TestEmployee\Data_Access_Layer\obj\Debug\net5.0\ref\Data_Access_Layer.dll
 C:\Users\ecos0\source\repos\TestEmployee\Data_Access_Layer\obj\Debug\net5.0\Data_Access_Layer.pdb
 C:\Users\ecos0\source\repos\TestEmployee\Data_Access_Layer\obj\Debug\net5.0\Data_Access_Layer.csproj.AssemblyReference.cache
+C:\Users\ecos0\source\TestJobs\CurrentVersion\TestEmployee\Data_Access_Layer\bin\Debug\net5.0\Data_Access_Layer.deps.json
+C:\Users\ecos0\source\TestJobs\CurrentVersion\TestEmployee\Data_Access_Layer\bin\Debug\net5.0\Data_Access_Layer.dll
+C:\Users\ecos0\source\TestJobs\CurrentVersion\TestEmployee\Data_Access_Layer\bin\Debug\net5.0\ref\Data_Access_Layer.dll
+C:\Users\ecos0\source\TestJobs\CurrentVersion\TestEmployee\Data_Access_Layer\bin\Debug\net5.0\Data_Access_Layer.pdb
+C:\Users\ecos0\source\TestJobs\CurrentVersion\TestEmployee\Data_Access_Layer\obj\Debug\net5.0\Data_Access_Layer.csproj.AssemblyReference.cache
+C:\Users\ecos0\source\TestJobs\CurrentVersion\TestEmployee\Data_Access_Layer\obj\Debug\net5.0\Data_Access_Layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ecos0\source\TestJobs\CurrentVersion\TestEmployee\Data_Access_Layer\obj\Debug\net5.0\Data_Access_Layer.AssemblyInfoInputs.cache
+C:\Users\ecos0\source\TestJobs\CurrentVersion\TestEmployee\Data_Access_Layer\obj\Debug\net5.0\Data_Access_Layer.AssemblyInfo.cs
+C:\Users\ecos0\source\TestJobs\CurrentVersion\TestEmployee\Data_Access_Layer\obj\Debug\net5.0\Data_Access_Layer.csproj.CoreCompileInputs.cache
+C:\Users\ecos0\source\TestJobs\CurrentVersion\TestEmployee\Data_Access_Layer\obj\Debug\net5.0\Data_Access_Layer.dll
+C:\Users\ecos0\source\TestJobs\CurrentVersion\TestEmployee\Data_Access_Layer\obj\Debug\net5.0\ref\Data_Access_Layer.dll
+C:\Users\ecos0\source\TestJobs\CurrentVersion\TestEmployee\Data_Access_Layer\obj\Debug\net5.0\Data_Access_Layer.pdb

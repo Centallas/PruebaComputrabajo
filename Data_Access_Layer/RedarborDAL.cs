@@ -4,15 +4,14 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
-using System.Linq;
 
 
 namespace Data_Access_Layer
 {
-    public class RedarborDAL
+    public class RedarborDal
     {
-        db dbop = new db();
-        string msg = string.Empty;
+        private readonly db _dbop = new db();
+        private string _msg = string.Empty;
 
         public async Task<List<Employee>> GetAllEmployee()
         {
@@ -24,9 +23,7 @@ namespace Data_Access_Layer
         }
         private async Task<List<Employee>> GetEmployee(int id)
         {
-            DataSet ds;
-            List<Employee> employeeById;
-            GetEmployeeData(id, out ds, out employeeById);
+            GetEmployeeData(id, out var ds, out var employeeById);
 
             await Task.Run(() =>
             {
@@ -59,10 +56,10 @@ namespace Data_Access_Layer
         } 
         public async Task<string> InsertEmployee(Employee emp)
         {
-            string msg = string.Empty;
+            string msg;
             try
             {
-                msg = await dbop.EmployeeOpt(emp);
+                msg = await _dbop.EmployeeOpt(emp);
             }
             catch (Exception ex)
             {
@@ -73,11 +70,11 @@ namespace Data_Access_Layer
         }
         public async Task<string> UpdateEmployee(int id, Employee emp)
         {
-            string msg = string.Empty;
+            string msg;
             try
             {
                 emp.ID = id;
-                msg = await dbop.EmployeeOpt(emp);
+                msg = await _dbop.EmployeeOpt(emp);
             }
             catch (Exception ex)
             {
@@ -89,13 +86,15 @@ namespace Data_Access_Layer
         }
         public async Task<string> DeleteEmployee(int id)
         {
-            string msg = string.Empty;
+            string msg;
             try
             {
-                Employee emp = new Employee();
-                emp.ID = id;
-                emp.type = "delete";
-                msg = await dbop.EmployeeOpt(emp);
+                Employee emp = new Employee
+                {
+                    ID = id,
+                    type = "delete"
+                };
+                msg = await _dbop.EmployeeOpt(emp);
             }
             catch (Exception ex)
             {
@@ -104,11 +103,10 @@ namespace Data_Access_Layer
             return msg;
 
         }
-        public async Task<List<Employee>> GetEmployeeList()
+
+        private async Task<List<Employee>> GetEmployeeList()
         {
-            DataSet ds;
-            List<Employee> listEmployee;
-            GetListData(out ds, out listEmployee);
+            GetListData(out var ds, out var listEmployee);
 
             await Task.Run(() =>
             {
@@ -133,10 +131,7 @@ namespace Data_Access_Layer
                         Telephone = dr["Telephone"].ToString(),
                         UpdatedOn = (DateTime)dr["UpdatedOn"],
                         Username = dr["UserName"].ToString(),
-                        //type = dr["type"].ToString()
-
                     });
-
                 }
             });
 
@@ -145,17 +140,21 @@ namespace Data_Access_Layer
         }
         private void GetListData(out DataSet ds, out List<Employee> listEmployee)
         {
-            Employee emp = new Employee();
-            emp.type = "get";
-            ds = dbop.EmployeeGet(emp, out msg);
+            Employee emp = new Employee
+            {
+                type = "get"
+            };
+            ds = _dbop.EmployeeGet(emp, out _msg);
             listEmployee = new List<Employee>();
         }
         private void GetEmployeeData(int id, out DataSet ds, out List<Employee> employeeById)
         {
-            Employee emp = new Employee();
-            emp.ID = id;
-            emp.type = "getid";
-            ds = dbop.EmployeeGet(emp, out msg);
+            Employee emp = new Employee
+            {
+                ID = id,
+                type = "getid"
+            };
+            ds = _dbop.EmployeeGet(emp, out _msg);
             employeeById = new List<Employee>();
         }
     }

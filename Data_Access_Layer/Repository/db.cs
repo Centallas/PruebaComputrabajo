@@ -11,7 +11,7 @@ namespace Data_Access_Layer.Repository
 {
     public class db
     {
-        SqlConnection connection;
+        readonly SqlConnection connection;
         public IConfigurationRoot GetConfiguration()
         {
             var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory())

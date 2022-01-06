@@ -1,9 +1,5 @@
-﻿using Data_Access_Layer;
-using Data_Access_Layer.Repository;
-using Data_Access_Layer.Repository.Entities;
-using System;
+﻿using Data_Access_Layer.Repository.Entities;
 using System.Collections.Generic;
-using System.Data;
 using System.Threading.Tasks;
 
 namespace Business_Logic_Layer
@@ -12,11 +8,11 @@ namespace Business_Logic_Layer
     public class RedarborBLL
     {
 
-        private Data_Access_Layer.RedarborDAL _DAL;
+        private readonly Data_Access_Layer.RedarborDal _DAL;
 
         public RedarborBLL()
         {
-            _DAL = new Data_Access_Layer.RedarborDAL();
+            _DAL = new Data_Access_Layer.RedarborDal();
         }
         public async Task<List<Employee>> GetAllEmployee()
         {

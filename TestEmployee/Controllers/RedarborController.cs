@@ -1,9 +1,7 @@
 ﻿
 using Data_Access_Layer.Repository.Entities;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Data;
 using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -14,48 +12,48 @@ namespace TestEmployee.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class redarborController : ControllerBase
+    public class RedarborController : ControllerBase
     {
-        private Business_Logic_Layer.RedarborBLL _BLL;
+        private readonly Business_Logic_Layer.RedarborBLL _bll;
 
-        public redarborController()
+        public RedarborController()
         {
-            _BLL = new Business_Logic_Layer.RedarborBLL();
+            _bll = new Business_Logic_Layer.RedarborBLL();
         }
 
         //GET: api/<EmployeeController>
         [HttpGet]
         public async Task<List<Employee>> Get()
         {
-            return await _BLL.GetAllEmployee();
+            return await _bll.GetAllEmployee();
         }
 
         // GET api/<EmployeeController>/5
         [HttpGet("{id}")]
         public async Task<List<Employee>> Get(int id)
         {
-            return await _BLL.GetEmployeeById(id);
+            return await _bll.GetEmployeeById(id);
         }
 
         // POST api/<EmployeeController>
         [HttpPost]
         public async Task<string> Post([FromBody] Employee emp)
         {
-            return await _BLL.InsertEmployee(emp);
+            return await _bll.InsertEmployee(emp);
         }
 
         // PUT api/<EmployeeController>/5
         [HttpPut("{id}")]
         public async Task<string> Put(int id, [FromBody] Employee emp)
         {
-            return await _BLL.UpdateEmployee(id, emp);
+            return await _bll.UpdateEmployee(id, emp);
         }
 
         // DELETE api/<EmployeeController>/5
         [HttpDelete("{id}")]
         public async Task<string> Delete(int id)
         {
-            return await _BLL.DeleteEmployee(id);
+            return await _bll.DeleteEmployee(id);
         }
     }
 }
