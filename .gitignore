@@ -5,6 +5,8 @@
 
 # Folder
 bin
+bin/Debug/net5.0
+obj
 
 # User-specific files
 *.rsuser
