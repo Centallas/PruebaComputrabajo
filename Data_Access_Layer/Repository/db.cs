@@ -34,7 +34,7 @@ namespace Data_Access_Layer.Repository
             {
 
                 try
-                {
+                { 
                     SqlCommand command = new SqlCommand("Sp_Employee", connection);
                     command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@ID", employee.ID);
